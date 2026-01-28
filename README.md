@@ -1,4 +1,4 @@
-# Graph500 Assignment Notes
+# HW1 BFS
 
 ## Python BFS (logic reference)
 ```python
