@@ -1,34 +1,34 @@
-SCALE:                          10
+SCALE:                          16
 edgefactor:                     16
 NBFS:                           64
-graph_generation:               0.003158
+graph_generation:               0.274446
 num_mpi_processes:              1
-construction_time:              0.000234
-bfs  min_time:                  4.1e-05
-bfs  firstquartile_time:        4.2e-05
-bfs  median_time:               4.2e-05
-bfs  thirdquartile_time:        4.2e-05
-bfs  max_time:                  4.6e-05
-bfs  mean_time:                 4.20156e-05
-bfs  stddev_time:               6.54464e-07
-min_nedge:                      16239
-firstquartile_nedge:            16239
-median_nedge:                   16239
-thirdquartile_nedge:            16239
-max_nedge:                      16239
-mean_nedge:                     16239
+construction_time:              0.01848
+bfs  min_time:                  0.003087
+bfs  firstquartile_time:        0.0032815
+bfs  median_time:               0.0033775
+bfs  thirdquartile_time:        0.0036565
+bfs  max_time:                  0.004757
+bfs  mean_time:                 0.00349445
+bfs  stddev_time:               0.000347467
+min_nedge:                      1048079
+firstquartile_nedge:            1048079
+median_nedge:                   1048079
+thirdquartile_nedge:            1048079
+max_nedge:                      1048079
+mean_nedge:                     1048079
 stddev_nedge:                   0
-bfs  min_TEPS:                  3.53022e+08
-bfs  firstquartile_TEPS:        3.86643e+08
-bfs  median_TEPS:               3.86643e+08
-bfs  thirdquartile_TEPS:        3.86643e+08
-bfs  max_TEPS:                  3.96073e+08
-bfs  harmonic_mean_TEPS:     !  3.86499e+08
-bfs  harmonic_stddev_TEPS:      758496
-bfs  min_validate:              0.000359
-bfs  firstquartile_validate:    0.000367
-bfs  median_validate:           0.000372
-bfs  thirdquartile_validate:    0.000378
-bfs  max_validate:              0.000399
-bfs  mean_validate:             0.000372891
-bfs  stddev_validate:           7.68449e-06
+bfs  min_TEPS:                  2.20324e+08
+bfs  firstquartile_TEPS:        2.86634e+08
+bfs  median_TEPS:               3.10312e+08
+bfs  thirdquartile_TEPS:        3.1939e+08
+bfs  max_TEPS:                  3.39514e+08
+bfs  harmonic_mean_TEPS:     !  2.99926e+08
+bfs  harmonic_stddev_TEPS:      3.75733e+06
+bfs  min_validate:              0.023599
+bfs  firstquartile_validate:    0.0239695
+bfs  median_validate:           0.024228
+bfs  thirdquartile_validate:    0.024919
+bfs  max_validate:              0.028578
+bfs  mean_validate:             0.0245637
+bfs  stddev_validate:           0.00099014

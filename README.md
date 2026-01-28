@@ -31,9 +31,15 @@ Saved output logs:
 - Reference stdout/stderr: [src/graph500_reference_bfs_stdout.txt](src/graph500_reference_bfs_stdout.txt) / [src/graph500_reference_bfs_stderr.txt](src/graph500_reference_bfs_stderr.txt)
 - Custom stdout/stderr: [src/graph500_custom_bfs_stdout.txt](src/graph500_custom_bfs_stdout.txt) / [src/graph500_custom_bfs_stderr.txt](src/graph500_custom_bfs_stderr.txt)
 
-## Comparison Plot
-![Graph500 BFS Comparison](comparison.png)
+## Comparison Plot (SCALE=10)
+![Graph500 BFS Comparison (SCALE=10)](comparison_scale10.png)
+
+## Comparison Plot (SCALE=16)
+![Graph500 BFS Comparison (SCALE=16)](comparison_scale16.png)
+
+## Example Commands
+- Reference (SCALE=10): ./graph500_reference_bfs 10
+- Custom (SCALE=10): ./graph500_custom_bfs 10
 
 ## Analysis
-- The custom version uses a simpler local BFS flow, so the path is shorter and overhead is lower.
-- The reference version targets a general parallel/distributed setup; even in single-process mode it includes messaging/synchronization overhead.
+Under single-process execution, the custom BFS achieves lower runtime and higher TEPS than the Graph500 reference implementation at both SCALE=10 and SCALE=16. This is expected because the reference code is designed for parallel and distributed environments and retains additional abstraction and coordination overhead, which does not provide an advantage in a purely local setting.
