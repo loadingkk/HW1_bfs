@@ -18,8 +18,9 @@ def bfs(graph, start):
 
 	return order
 ```
-
+Because the Python version cannot be used directly in Graph500, I rewrote it in C and placed it into the custom BFS entry points in [src/bfs_custom.c](src/bfs_custom.c).
 The C custom BFS follows the same core logic (queue + visited), translated into Graph500's CSR layout and data structures.
+
 
 ## Implementation Overview
 - Python BFS implementation: see [bfs.py](bfs.py)
@@ -38,8 +39,14 @@ Saved output logs:
 ![Graph500 BFS Comparison (SCALE=16)](comparison_scale16.png)
 
 ## Example Commands
-- Reference (SCALE=10): ./graph500_reference_bfs 10
-- Custom (SCALE=10): ./graph500_custom_bfs 10
+Reference (SCALE=10):
+```
+ ./graph500_reference_bfs 10
+```
+Custom (SCALE=10): 
+```
+ ./graph500_custom_bfs 10
+```
 
 ## Analysis
 Under single-process execution, the custom BFS achieves lower runtime and higher TEPS than the Graph500 reference implementation at both SCALE=10 and SCALE=16. This is expected because the reference code is designed for parallel and distributed environments and retains additional abstraction and coordination overhead, which does not provide an advantage in a purely local setting.
