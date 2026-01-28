@@ -30,8 +30,40 @@
 #include <limits.h>
 #include <stdint.h>
 #include <inttypes.h>
+#include <unistd.h>
 
 int isisolated(int64_t v);
+static FILE* log_stdout_pipe = NULL;
+static FILE* log_stderr_pipe = NULL;
+
+static const char* program_basename(const char* path) {
+	if (!path || !*path) return "graph500";
+	const char* slash = strrchr(path, '/');
+	return slash ? slash + 1 : path;
+}
+
+static void setup_logging(const char* argv0) {
+	if (rank != 0) return;
+	const char* prog = program_basename(argv0);
+	char out_name[256];
+	char err_name[256];
+	snprintf(out_name, sizeof(out_name), "%s_stdout.txt", prog);
+	snprintf(err_name, sizeof(err_name), "%s_stderr.txt", prog);
+	char out_cmd[512];
+	char err_cmd[512];
+	snprintf(out_cmd, sizeof(out_cmd), "tee %s", out_name);
+	snprintf(err_cmd, sizeof(err_cmd), "tee %s 1>&2", err_name);
+	log_stdout_pipe = popen(out_cmd, "w");
+	if (log_stdout_pipe) {
+		dup2(fileno(log_stdout_pipe), fileno(stdout));
+		setvbuf(stdout, NULL, _IOLBF, 0);
+	}
+	log_stderr_pipe = popen(err_cmd, "w");
+	if (log_stderr_pipe) {
+		dup2(fileno(log_stderr_pipe), fileno(stderr));
+		setvbuf(stderr, NULL, _IONBF, 0);
+	}
+}
 static int compare_doubles(const void* a, const void* b) {
 	double aa = *(const double*)a;
 	double bb = *(const double*)b;
@@ -70,6 +102,7 @@ void get_statistics(const double x[], int n, volatile double r[s_LAST]) {
 int main(int argc, char** argv) {
 	aml_init(&argc,&argv); //includes MPI_Init inside
 	setup_globals();
+	setup_logging(argv[0]);
 
 	/* Parse arguments. */
 	int SCALE = 16;

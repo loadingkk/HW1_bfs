@@ -18,7 +18,7 @@ unsigned long *visited;
 int64_t visited_size;
 
 int64_t *pred_glob,*column;
-int *rowstarts;
+unsigned int *rowstarts;
 oned_csr_graph g;
 
 //user should provide this function which would be called once to do kernel 1: graph convert
@@ -27,6 +27,7 @@ void make_graph_data_structure(const tuple_graph* const tg) {
 	convert_graph_to_oned_csr(tg, &g);
 
 	column=g.column;
+	rowstarts=g.rowstarts;
 	visited_size = (g.nlocalverts + ulong_bits - 1) / ulong_bits;
 	visited = xmalloc(visited_size*sizeof(unsigned long));
 	//user code to allocate other buffers for bfs
@@ -37,7 +38,36 @@ void make_graph_data_structure(const tuple_graph* const tg) {
 //prior to calling run_bfs pred is set to -1 by calling clean_pred
 void run_bfs(int64_t root, int64_t* pred) {
 	pred_glob=pred;
-	//user code to do bfs
+	CLEAN_VISITED();
+
+	int *queue = xmalloc(g.nlocalverts * sizeof(int));
+	int qhead = 0;
+	int qtail = 0;
+
+	if (VERTEX_OWNER(root) == rank) {
+		int root_loc = VERTEX_LOCAL(root);
+		pred[root_loc] = root;
+		SET_VISITED(root);
+		queue[qtail++] = root_loc;
+	}
+
+	while (qhead < qtail) {
+		int vloc = queue[qhead++];
+		for (int64_t j = rowstarts[vloc]; j < rowstarts[vloc + 1]; j++) {
+			int64_t ngh = COLUMN(j);
+			if (VERTEX_OWNER(ngh) != rank) {
+				continue;
+			}
+			int ngh_loc = VERTEX_LOCAL(ngh);
+			if (!TEST_VISITEDLOC(ngh_loc)) {
+				SET_VISITEDLOC(ngh_loc);
+				pred[ngh_loc] = VERTEX_TO_GLOBAL(rank, vloc);
+				queue[qtail++] = ngh_loc;
+			}
+		}
+	}
+
+	free(queue);
 }
 
 //we need edge count to calculate teps. Validation will check if this count is correct
