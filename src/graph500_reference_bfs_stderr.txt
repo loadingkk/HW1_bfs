@@ -1,322 +1,322 @@
-graph_generation:               0.274772 s
-construction_time:              0.017420 s
+graph_generation:               6.169108 s
+construction_time:              0.646080 s
 Running BFS 0
-Time for BFS 0 is 0.008899
-TEPS for BFS 0 is 1.17775e+08
+Time for BFS 0 is 0.190526
+TEPS for BFS 0 is 8.805e+07
 Validating BFS 0
-Validate time for BFS 0 is 0.024587
+Validate time for BFS 0 is 0.899509
 Running BFS 1
-Time for BFS 1 is 0.008015
-TEPS for BFS 1 is 1.30765e+08
+Time for BFS 1 is 0.191417
+TEPS for BFS 1 is 8.76402e+07
 Validating BFS 1
-Validate time for BFS 1 is 0.024344
+Validate time for BFS 1 is 0.921874
 Running BFS 2
-Time for BFS 2 is 0.007741
-TEPS for BFS 2 is 1.35393e+08
+Time for BFS 2 is 0.195572
+TEPS for BFS 2 is 8.57782e+07
 Validating BFS 2
-Validate time for BFS 2 is 0.024404
+Validate time for BFS 2 is 0.842735
 Running BFS 3
-Time for BFS 3 is 0.007595
-TEPS for BFS 3 is 1.37996e+08
+Time for BFS 3 is 0.193998
+TEPS for BFS 3 is 8.64742e+07
 Validating BFS 3
-Validate time for BFS 3 is 0.024022
+Validate time for BFS 3 is 0.890383
 Running BFS 4
-Time for BFS 4 is 0.007589
-TEPS for BFS 4 is 1.38105e+08
+Time for BFS 4 is 0.196204
+TEPS for BFS 4 is 8.55019e+07
 Validating BFS 4
-Validate time for BFS 4 is 0.024596
+Validate time for BFS 4 is 0.848875
 Running BFS 5
-Time for BFS 5 is 0.007268
-TEPS for BFS 5 is 1.44205e+08
+Time for BFS 5 is 0.195390
+TEPS for BFS 5 is 8.58581e+07
 Validating BFS 5
-Validate time for BFS 5 is 0.024613
+Validate time for BFS 5 is 0.858614
 Running BFS 6
-Time for BFS 6 is 0.007234
-TEPS for BFS 6 is 1.44882e+08
+Time for BFS 6 is 0.196232
+TEPS for BFS 6 is 8.54897e+07
 Validating BFS 6
-Validate time for BFS 6 is 0.024565
+Validate time for BFS 6 is 0.880422
 Running BFS 7
-Time for BFS 7 is 0.007229
-TEPS for BFS 7 is 1.44983e+08
+Time for BFS 7 is 0.191966
+TEPS for BFS 7 is 8.73895e+07
 Validating BFS 7
-Validate time for BFS 7 is 0.024511
+Validate time for BFS 7 is 0.871647
 Running BFS 8
-Time for BFS 8 is 0.007288
-TEPS for BFS 8 is 1.43809e+08
+Time for BFS 8 is 0.198576
+TEPS for BFS 8 is 8.44806e+07
 Validating BFS 8
-Validate time for BFS 8 is 0.024651
+Validate time for BFS 8 is 0.882478
 Running BFS 9
-Time for BFS 9 is 0.007358
-TEPS for BFS 9 is 1.42441e+08
+Time for BFS 9 is 0.197003
+TEPS for BFS 9 is 8.51551e+07
 Validating BFS 9
-Validate time for BFS 9 is 0.025038
+Validate time for BFS 9 is 0.887677
 Running BFS 10
-Time for BFS 10 is 0.007293
-TEPS for BFS 10 is 1.4371e+08
+Time for BFS 10 is 0.195706
+TEPS for BFS 10 is 8.57195e+07
 Validating BFS 10
-Validate time for BFS 10 is 0.023774
+Validate time for BFS 10 is 0.883854
 Running BFS 11
-Time for BFS 11 is 0.007794
-TEPS for BFS 11 is 1.34473e+08
+Time for BFS 11 is 0.199667
+TEPS for BFS 11 is 8.4019e+07
 Validating BFS 11
-Validate time for BFS 11 is 0.025036
+Validate time for BFS 11 is 0.869164
 Running BFS 12
-Time for BFS 12 is 0.008794
-TEPS for BFS 12 is 1.19181e+08
+Time for BFS 12 is 0.192930
+TEPS for BFS 12 is 8.69529e+07
 Validating BFS 12
-Validate time for BFS 12 is 0.023918
+Validate time for BFS 12 is 0.941560
 Running BFS 13
-Time for BFS 13 is 0.007492
-TEPS for BFS 13 is 1.39893e+08
+Time for BFS 13 is 0.204176
+TEPS for BFS 13 is 8.21635e+07
 Validating BFS 13
-Validate time for BFS 13 is 0.023846
+Validate time for BFS 13 is 0.871133
 Running BFS 14
-Time for BFS 14 is 0.007788
-TEPS for BFS 14 is 1.34576e+08
+Time for BFS 14 is 0.193750
+TEPS for BFS 14 is 8.65849e+07
 Validating BFS 14
-Validate time for BFS 14 is 0.023809
+Validate time for BFS 14 is 0.869891
 Running BFS 15
-Time for BFS 15 is 0.007602
-TEPS for BFS 15 is 1.37869e+08
+Time for BFS 15 is 0.191760
+TEPS for BFS 15 is 8.74834e+07
 Validating BFS 15
-Validate time for BFS 15 is 0.023918
+Validate time for BFS 15 is 0.877371
 Running BFS 16
-Time for BFS 16 is 0.007672
-TEPS for BFS 16 is 1.36611e+08
+Time for BFS 16 is 0.199019
+TEPS for BFS 16 is 8.42925e+07
 Validating BFS 16
-Validate time for BFS 16 is 0.023855
+Validate time for BFS 16 is 0.912626
 Running BFS 17
-Time for BFS 17 is 0.007522
-TEPS for BFS 17 is 1.39335e+08
+Time for BFS 17 is 0.203665
+TEPS for BFS 17 is 8.23697e+07
 Validating BFS 17
-Validate time for BFS 17 is 0.023844
+Validate time for BFS 17 is 0.910533
 Running BFS 18
-Time for BFS 18 is 0.007611
-TEPS for BFS 18 is 1.37706e+08
+Time for BFS 18 is 0.195208
+TEPS for BFS 18 is 8.59382e+07
 Validating BFS 18
-Validate time for BFS 18 is 0.023993
+Validate time for BFS 18 is 0.894926
 Running BFS 19
-Time for BFS 19 is 0.007231
-TEPS for BFS 19 is 1.44942e+08
+Time for BFS 19 is 0.194148
+TEPS for BFS 19 is 8.64074e+07
 Validating BFS 19
-Validate time for BFS 19 is 0.024405
+Validate time for BFS 19 is 0.920753
 Running BFS 20
-Time for BFS 20 is 0.007300
-TEPS for BFS 20 is 1.43572e+08
+Time for BFS 20 is 0.195302
+TEPS for BFS 20 is 8.58968e+07
 Validating BFS 20
-Validate time for BFS 20 is 0.023921
+Validate time for BFS 20 is 0.879113
 Running BFS 21
-Time for BFS 21 is 0.007147
-TEPS for BFS 21 is 1.46646e+08
+Time for BFS 21 is 0.196173
+TEPS for BFS 21 is 8.55154e+07
 Validating BFS 21
-Validate time for BFS 21 is 0.024147
+Validate time for BFS 21 is 0.887367
 Running BFS 22
-Time for BFS 22 is 0.007189
-TEPS for BFS 22 is 1.45789e+08
+Time for BFS 22 is 0.195760
+TEPS for BFS 22 is 8.56958e+07
 Validating BFS 22
-Validate time for BFS 22 is 0.024190
+Validate time for BFS 22 is 1.153725
 Running BFS 23
-Time for BFS 23 is 0.007099
-TEPS for BFS 23 is 1.47638e+08
+Time for BFS 23 is 0.196719
+TEPS for BFS 23 is 8.52781e+07
 Validating BFS 23
-Validate time for BFS 23 is 0.024572
+Validate time for BFS 23 is 0.911445
 Running BFS 24
-Time for BFS 24 is 0.007296
-TEPS for BFS 24 is 1.43651e+08
+Time for BFS 24 is 0.195398
+TEPS for BFS 24 is 8.58546e+07
 Validating BFS 24
-Validate time for BFS 24 is 0.024257
+Validate time for BFS 24 is 0.901252
 Running BFS 25
-Time for BFS 25 is 0.007221
-TEPS for BFS 25 is 1.45143e+08
+Time for BFS 25 is 0.204970
+TEPS for BFS 25 is 8.18452e+07
 Validating BFS 25
-Validate time for BFS 25 is 0.024324
+Validate time for BFS 25 is 0.952212
 Running BFS 26
-Time for BFS 26 is 0.007152
-TEPS for BFS 26 is 1.46543e+08
+Time for BFS 26 is 0.203891
+TEPS for BFS 26 is 8.22784e+07
 Validating BFS 26
-Validate time for BFS 26 is 0.024286
+Validate time for BFS 26 is 0.889061
 Running BFS 27
-Time for BFS 27 is 0.007133
-TEPS for BFS 27 is 1.46934e+08
+Time for BFS 27 is 0.195967
+TEPS for BFS 27 is 8.56053e+07
 Validating BFS 27
-Validate time for BFS 27 is 0.024025
+Validate time for BFS 27 is 0.878896
 Running BFS 28
-Time for BFS 28 is 0.007288
-TEPS for BFS 28 is 1.43809e+08
+Time for BFS 28 is 0.200449
+TEPS for BFS 28 is 8.36912e+07
 Validating BFS 28
-Validate time for BFS 28 is 0.024261
+Validate time for BFS 28 is 0.912297
 Running BFS 29
-Time for BFS 29 is 0.007156
-TEPS for BFS 29 is 1.46462e+08
+Time for BFS 29 is 0.193493
+TEPS for BFS 29 is 8.66999e+07
 Validating BFS 29
-Validate time for BFS 29 is 0.024052
+Validate time for BFS 29 is 1.046809
 Running BFS 30
-Time for BFS 30 is 0.010793
-TEPS for BFS 30 is 9.71073e+07
+Time for BFS 30 is 0.231523
+TEPS for BFS 30 is 7.24585e+07
 Validating BFS 30
-Validate time for BFS 30 is 0.034406
+Validate time for BFS 30 is 0.970960
 Running BFS 31
-Time for BFS 31 is 0.007503
-TEPS for BFS 31 is 1.39688e+08
+Time for BFS 31 is 0.203745
+TEPS for BFS 31 is 8.23373e+07
 Validating BFS 31
-Validate time for BFS 31 is 0.023931
+Validate time for BFS 31 is 0.883566
 Running BFS 32
-Time for BFS 32 is 0.007200
-TEPS for BFS 32 is 1.45567e+08
+Time for BFS 32 is 0.193849
+TEPS for BFS 32 is 8.65406e+07
 Validating BFS 32
-Validate time for BFS 32 is 0.024057
+Validate time for BFS 32 is 0.900081
 Running BFS 33
-Time for BFS 33 is 0.007650
-TEPS for BFS 33 is 1.37004e+08
+Time for BFS 33 is 0.203696
+TEPS for BFS 33 is 8.23571e+07
 Validating BFS 33
-Validate time for BFS 33 is 0.023680
+Validate time for BFS 33 is 0.888276
 Running BFS 34
-Time for BFS 34 is 0.007575
-TEPS for BFS 34 is 1.3836e+08
+Time for BFS 34 is 0.204042
+TEPS for BFS 34 is 8.22175e+07
 Validating BFS 34
-Validate time for BFS 34 is 0.023919
+Validate time for BFS 34 is 0.943143
 Running BFS 35
-Time for BFS 35 is 0.007873
-TEPS for BFS 35 is 1.33123e+08
+Time for BFS 35 is 0.206213
+TEPS for BFS 35 is 8.13519e+07
 Validating BFS 35
-Validate time for BFS 35 is 0.023779
+Validate time for BFS 35 is 0.908973
 Running BFS 36
-Time for BFS 36 is 0.007636
-TEPS for BFS 36 is 1.37255e+08
+Time for BFS 36 is 0.202717
+TEPS for BFS 36 is 8.27549e+07
 Validating BFS 36
-Validate time for BFS 36 is 0.023873
+Validate time for BFS 36 is 0.925412
 Running BFS 37
-Time for BFS 37 is 0.007499
-TEPS for BFS 37 is 1.39763e+08
+Time for BFS 37 is 0.204619
+TEPS for BFS 37 is 8.19856e+07
 Validating BFS 37
-Validate time for BFS 37 is 0.023869
+Validate time for BFS 37 is 0.941105
 Running BFS 38
-Time for BFS 38 is 0.007541
-TEPS for BFS 38 is 1.38984e+08
+Time for BFS 38 is 0.207710
+TEPS for BFS 38 is 8.07656e+07
 Validating BFS 38
-Validate time for BFS 38 is 0.023902
+Validate time for BFS 38 is 0.907366
 Running BFS 39
-Time for BFS 39 is 0.007536
-TEPS for BFS 39 is 1.39076e+08
+Time for BFS 39 is 0.202269
+TEPS for BFS 39 is 8.29382e+07
 Validating BFS 39
-Validate time for BFS 39 is 0.023781
+Validate time for BFS 39 is 0.874806
 Running BFS 40
-Time for BFS 40 is 0.007434
-TEPS for BFS 40 is 1.40985e+08
+Time for BFS 40 is 0.201671
+TEPS for BFS 40 is 8.31841e+07
 Validating BFS 40
-Validate time for BFS 40 is 0.023829
+Validate time for BFS 40 is 0.926325
 Running BFS 41
-Time for BFS 41 is 0.007455
-TEPS for BFS 41 is 1.40587e+08
+Time for BFS 41 is 0.210339
+TEPS for BFS 41 is 7.97561e+07
 Validating BFS 41
-Validate time for BFS 41 is 0.024147
+Validate time for BFS 41 is 0.881745
 Running BFS 42
-Time for BFS 42 is 0.008421
-TEPS for BFS 42 is 1.2446e+08
+Time for BFS 42 is 0.204369
+TEPS for BFS 42 is 8.20859e+07
 Validating BFS 42
-Validate time for BFS 42 is 0.025271
+Validate time for BFS 42 is 0.949807
 Running BFS 43
-Time for BFS 43 is 0.007207
-TEPS for BFS 43 is 1.45425e+08
+Time for BFS 43 is 0.198305
+TEPS for BFS 43 is 8.4596e+07
 Validating BFS 43
-Validate time for BFS 43 is 0.024495
+Validate time for BFS 43 is 0.894099
 Running BFS 44
-Time for BFS 44 is 0.007217
-TEPS for BFS 44 is 1.45224e+08
+Time for BFS 44 is 0.197506
+TEPS for BFS 44 is 8.49383e+07
 Validating BFS 44
-Validate time for BFS 44 is 0.024335
+Validate time for BFS 44 is 0.932121
 Running BFS 45
-Time for BFS 45 is 0.007451
-TEPS for BFS 45 is 1.40663e+08
+Time for BFS 45 is 0.198374
+TEPS for BFS 45 is 8.45666e+07
 Validating BFS 45
-Validate time for BFS 45 is 0.024718
+Validate time for BFS 45 is 0.937399
 Running BFS 46
-Time for BFS 46 is 0.008232
-TEPS for BFS 46 is 1.27318e+08
+Time for BFS 46 is 0.207275
+TEPS for BFS 46 is 8.09351e+07
 Validating BFS 46
-Validate time for BFS 46 is 0.027293
+Validate time for BFS 46 is 0.933099
 Running BFS 47
-Time for BFS 47 is 0.008729
-TEPS for BFS 47 is 1.20069e+08
+Time for BFS 47 is 0.205236
+TEPS for BFS 47 is 8.17392e+07
 Validating BFS 47
-Validate time for BFS 47 is 0.023827
+Validate time for BFS 47 is 0.914060
 Running BFS 48
-Time for BFS 48 is 0.007539
-TEPS for BFS 48 is 1.39021e+08
+Time for BFS 48 is 0.201763
+TEPS for BFS 48 is 8.31462e+07
 Validating BFS 48
-Validate time for BFS 48 is 0.024003
+Validate time for BFS 48 is 0.912219
 Running BFS 49
-Time for BFS 49 is 0.007508
-TEPS for BFS 49 is 1.39595e+08
+Time for BFS 49 is 0.194192
+TEPS for BFS 49 is 8.63878e+07
 Validating BFS 49
-Validate time for BFS 49 is 0.024222
+Validate time for BFS 49 is 0.934749
 Running BFS 50
-Time for BFS 50 is 0.008929
-TEPS for BFS 50 is 1.17379e+08
+Time for BFS 50 is 0.197805
+TEPS for BFS 50 is 8.48099e+07
 Validating BFS 50
-Validate time for BFS 50 is 0.024685
+Validate time for BFS 50 is 1.113977
 Running BFS 51
-Time for BFS 51 is 0.008306
-TEPS for BFS 51 is 1.26183e+08
+Time for BFS 51 is 0.201362
+TEPS for BFS 51 is 8.33117e+07
 Validating BFS 51
-Validate time for BFS 51 is 0.024591
+Validate time for BFS 51 is 0.870205
 Running BFS 52
-Time for BFS 52 is 0.008156
-TEPS for BFS 52 is 1.28504e+08
+Time for BFS 52 is 0.199444
+TEPS for BFS 52 is 8.41129e+07
 Validating BFS 52
-Validate time for BFS 52 is 0.024688
+Validate time for BFS 52 is 0.911574
 Running BFS 53
-Time for BFS 53 is 0.007240
-TEPS for BFS 53 is 1.44762e+08
+Time for BFS 53 is 0.195492
+TEPS for BFS 53 is 8.58133e+07
 Validating BFS 53
-Validate time for BFS 53 is 0.024146
+Validate time for BFS 53 is 0.925113
 Running BFS 54
-Time for BFS 54 is 0.007996
-TEPS for BFS 54 is 1.31075e+08
+Time for BFS 54 is 0.196697
+TEPS for BFS 54 is 8.52876e+07
 Validating BFS 54
-Validate time for BFS 54 is 0.024605
+Validate time for BFS 54 is 0.970833
 Running BFS 55
-Time for BFS 55 is 0.009255
-TEPS for BFS 55 is 1.13245e+08
+Time for BFS 55 is 0.208358
+TEPS for BFS 55 is 8.05144e+07
 Validating BFS 55
-Validate time for BFS 55 is 0.024605
+Validate time for BFS 55 is 0.926625
 Running BFS 56
-Time for BFS 56 is 0.007678
-TEPS for BFS 56 is 1.36504e+08
+Time for BFS 56 is 0.199332
+TEPS for BFS 56 is 8.41602e+07
 Validating BFS 56
-Validate time for BFS 56 is 0.023960
+Validate time for BFS 56 is 0.905556
 Running BFS 57
-Time for BFS 57 is 0.007657
-TEPS for BFS 57 is 1.36879e+08
+Time for BFS 57 is 0.203375
+TEPS for BFS 57 is 8.24871e+07
 Validating BFS 57
-Validate time for BFS 57 is 0.024245
+Validate time for BFS 57 is 0.968506
 Running BFS 58
-Time for BFS 58 is 0.007459
-TEPS for BFS 58 is 1.40512e+08
+Time for BFS 58 is 0.208031
+TEPS for BFS 58 is 8.0641e+07
 Validating BFS 58
-Validate time for BFS 58 is 0.023888
+Validate time for BFS 58 is 0.964080
 Running BFS 59
-Time for BFS 59 is 0.007534
-TEPS for BFS 59 is 1.39113e+08
+Time for BFS 59 is 0.201026
+TEPS for BFS 59 is 8.3451e+07
 Validating BFS 59
-Validate time for BFS 59 is 0.024245
+Validate time for BFS 59 is 0.950381
 Running BFS 60
-Time for BFS 60 is 0.007286
-TEPS for BFS 60 is 1.43848e+08
+Time for BFS 60 is 0.199130
+TEPS for BFS 60 is 8.42456e+07
 Validating BFS 60
-Validate time for BFS 60 is 0.024127
+Validate time for BFS 60 is 0.952049
 Running BFS 61
-Time for BFS 61 is 0.007181
-TEPS for BFS 61 is 1.45952e+08
+Time for BFS 61 is 0.196926
+TEPS for BFS 61 is 8.51884e+07
 Validating BFS 61
-Validate time for BFS 61 is 0.024274
+Validate time for BFS 61 is 0.982908
 Running BFS 62
-Time for BFS 62 is 0.007337
-TEPS for BFS 62 is 1.42848e+08
+Time for BFS 62 is 0.205045
+TEPS for BFS 62 is 8.18153e+07
 Validating BFS 62
-Validate time for BFS 62 is 0.023905
+Validate time for BFS 62 is 0.941754
 Running BFS 63
-Time for BFS 63 is 0.007092
-TEPS for BFS 63 is 1.47783e+08
+Time for BFS 63 is 0.202294
+TEPS for BFS 63 is 8.29279e+07
 Validating BFS 63
-Validate time for BFS 63 is 0.024767
+Validate time for BFS 63 is 1.149003
