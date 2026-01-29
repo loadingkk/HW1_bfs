@@ -24,8 +24,8 @@ The C custom BFS follows the same core logic (queue + visited), translated into 
 
 ## Implementation Overview
 - Python BFS implementation: see [bfs.py](bfs.py)
-- C BFS implementation (custom, based on Graph500 framework): see [src/bfs_custom.c](src/bfs_custom.c)
-- Reference implementation: see [src/bfs_reference.c](src/bfs_reference.c)
+- Customed C BFS implementation (based on Graph500 framework): see [src/bfs_custom.c](src/bfs_custom.c)
+- Graph500 Reference implementation: see [src/bfs_reference.c](src/bfs_reference.c)
 
 ## Run Outputs
 Saved output logs:
