@@ -67,5 +67,48 @@ Custom (SCALE=10):
  ./graph500_custom_bfs 10
 ```
 
+## Automated data collection (no plotting)
+
+This project now provides scripts to run reference/custom BFS automatically for scales 18..24,
+and save parsed metrics into one unified result file.
+
+Scripts:
+- `run_benchmark_local.py`  -> writes rows with `location=local`
+- `run_benchmark_cloud.py`  -> writes rows with `location=cloud`
+
+Output files:
+- Unified CSV: `result/benchmark_results.csv`
+- Raw logs per run:
+	- `result/raw/local/scale_<N>/reference_stdout.txt`
+	- `result/raw/local/scale_<N>/custom_stdout.txt`
+	- `result/raw/cloud/scale_<N>/reference_stdout.txt`
+	- `result/raw/cloud/scale_<N>/custom_stdout.txt`
+
+CSV columns (aligned with parser output):
+- `timestamp_utc`
+- `location` (`local` or `cloud`)
+- `scale`
+- `impl` (`reference` or `custom`)
+- `binary`
+- `bfs_min_time`
+- `bfs_median_time`
+- `bfs_mean_time`
+- `stdout_file`
+- `stderr_file`
+
+Dedup/update rule:
+- Primary key is `(location, scale, impl)`.
+- Re-running the same key updates that row (no duplicate rows).
+
+Run examples:
+```bash
+python run_benchmark_local.py
+python run_benchmark_cloud.py
+
+# Optional: run only one scale
+python benchmark_pipeline.py --location local --scales 18
+python benchmark_pipeline.py --location cloud --scales 18
+```
+
 ## Analysis
 Under single-process execution, the custom BFS achieves lower runtime and higher TEPS than the Graph500 reference implementation at both SCALE=10 and SCALE=16. This is expected because the reference code is designed for parallel and distributed environments and retains additional abstraction and coordination overhead, which does not provide an advantage in a purely local setting. As SCALE increases, the performance gap narrows.
