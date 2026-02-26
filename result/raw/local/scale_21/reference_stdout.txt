@@ -1,0 +1,34 @@
+SCALE:                          21
+edgefactor:                     16
+NBFS:                           64
+graph_generation:               11.3768
+num_mpi_processes:              1
+construction_time:              1.47105
+bfs  min_time:                  0.327935
+bfs  firstquartile_time:        0.330749
+bfs  median_time:               0.3328
+bfs  thirdquartile_time:        0.334289
+bfs  max_time:                  0.342442
+bfs  mean_time:                 0.33282
+bfs  stddev_time:               0.00264672
+min_nedge:                      33552502
+firstquartile_nedge:            33552502
+median_nedge:                   33552502
+thirdquartile_nedge:            33552502
+max_nedge:                      33552502
+mean_nedge:                     33552502
+stddev_nedge:                   0
+bfs  min_TEPS:                  9.79801e+07
+bfs  firstquartile_TEPS:        1.0037e+08
+bfs  median_TEPS:               1.00819e+08
+bfs  thirdquartile_TEPS:        1.01444e+08
+bfs  max_TEPS:                  1.02314e+08
+bfs  harmonic_mean_TEPS:     !  1.00813e+08
+bfs  harmonic_stddev_TEPS:      101005
+bfs  min_validate:              1.69992
+bfs  firstquartile_validate:    1.7078
+bfs  median_validate:           1.71361
+bfs  thirdquartile_validate:    1.72097
+bfs  max_validate:              1.97502
+bfs  mean_validate:             1.7214
+bfs  stddev_validate:           0.0355092

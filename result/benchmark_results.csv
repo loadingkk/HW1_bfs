@@ -1,3 +1,15 @@
 timestamp_utc,location,scale,impl,binary,bfs_min_time,bfs_median_time,bfs_mean_time,stdout_file,stderr_file
-2026-02-26T02:47:54Z,local,18,custom,graph500_custom_bfs,0.016127,0.016331,0.0164077,result/raw/local/scale_18/custom_stdout.txt,result/raw/local/scale_18/custom_stderr.txt
-2026-02-26T02:47:45Z,local,18,reference,graph500_reference_bfs,0.031623,0.0322965,0.0329199,result/raw/local/scale_18/reference_stdout.txt,result/raw/local/scale_18/reference_stderr.txt
+2026-02-26T03:12:10Z,local,18,custom,graph500_custom_bfs,0.01612,0.0163415,0.0164226,result/raw/local/scale_18/custom_stdout.txt,result/raw/local/scale_18/custom_stderr.txt
+2026-02-26T03:12:01Z,local,18,reference,graph500_reference_bfs,0.031638,0.03206,0.0320701,result/raw/local/scale_18/reference_stdout.txt,result/raw/local/scale_18/reference_stderr.txt
+2026-02-26T03:12:51Z,local,19,custom,graph500_custom_bfs,0.036478,0.0369055,0.036893,result/raw/local/scale_19/custom_stdout.txt,result/raw/local/scale_19/custom_stderr.txt
+2026-02-26T03:12:32Z,local,19,reference,graph500_reference_bfs,0.069219,0.0696115,0.0697221,result/raw/local/scale_19/reference_stdout.txt,result/raw/local/scale_19/reference_stderr.txt
+2026-02-26T03:14:30Z,local,20,custom,graph500_custom_bfs,0.081663,0.082207,0.0822462,result/raw/local/scale_20/custom_stdout.txt,result/raw/local/scale_20/custom_stderr.txt
+2026-02-26T03:13:44Z,local,20,reference,graph500_reference_bfs,0.151067,0.151898,0.152196,result/raw/local/scale_20/reference_stdout.txt,result/raw/local/scale_20/reference_stderr.txt
+2026-02-26T03:19:26Z,local,21,custom,graph500_custom_bfs,0.185531,0.186667,0.188358,result/raw/local/scale_21/custom_stdout.txt,result/raw/local/scale_21/custom_stderr.txt
+2026-02-26T03:17:02Z,local,21,reference,graph500_reference_bfs,0.327935,0.3328,0.33282,result/raw/local/scale_21/reference_stdout.txt,result/raw/local/scale_21/reference_stderr.txt
+2026-02-26T03:31:59Z,local,22,custom,graph500_custom_bfs,0.404017,0.407225,0.409214,result/raw/local/scale_22/custom_stdout.txt,result/raw/local/scale_22/custom_stderr.txt
+2026-02-26T03:25:52Z,local,22,reference,graph500_reference_bfs,0.70123,0.709454,0.710073,result/raw/local/scale_22/reference_stdout.txt,result/raw/local/scale_22/reference_stderr.txt
+2026-02-26T04:57:52Z,local,23,custom,graph500_custom_bfs,0.821114,0.841575,3.78575,result/raw/local/scale_23/custom_stdout.txt,result/raw/local/scale_23/custom_stderr.txt
+2026-02-26T04:27:56Z,local,23,reference,graph500_reference_bfs,1.39383,1.42199,1.45931,result/raw/local/scale_23/reference_stdout.txt,result/raw/local/scale_23/reference_stderr.txt
+2026-02-26T06:18:19Z,local,24,custom,graph500_custom_bfs,1.76507,1.79845,1.85849,result/raw/local/scale_24/custom_stdout.txt,result/raw/local/scale_24/custom_stderr.txt
+2026-02-26T05:31:52Z,local,24,reference,graph500_reference_bfs,3.21679,3.47852,3.53711,result/raw/local/scale_24/reference_stdout.txt,result/raw/local/scale_24/reference_stderr.txt
