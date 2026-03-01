@@ -1,4 +1,16 @@
 timestamp_utc,location,scale,impl,binary,bfs_min_time,bfs_median_time,bfs_mean_time,stdout_file,stderr_file
+2026-03-01T19:52:27Z,cloud,18,custom,graph500_custom_bfs,0.025889,0.0275105,0.0280343,result/raw/cloud/scale_18/custom_stdout.txt,result/raw/cloud/scale_18/custom_stderr.txt
+2026-03-01T19:52:10Z,cloud,18,reference,graph500_reference_bfs,0.0509496,0.0538945,0.0551344,result/raw/cloud/scale_18/reference_stdout.txt,result/raw/cloud/scale_18/reference_stderr.txt
+2026-03-01T19:53:44Z,cloud,19,custom,graph500_custom_bfs,0.0615749,0.0656898,0.0664661,result/raw/cloud/scale_19/custom_stdout.txt,result/raw/cloud/scale_19/custom_stderr.txt
+2026-03-01T19:53:07Z,cloud,19,reference,graph500_reference_bfs,0.11026,0.116774,0.11901,result/raw/cloud/scale_19/reference_stdout.txt,result/raw/cloud/scale_19/reference_stderr.txt
+2026-03-01T19:57:06Z,cloud,20,custom,graph500_custom_bfs,0.135788,0.147261,0.148159,result/raw/cloud/scale_20/custom_stdout.txt,result/raw/cloud/scale_20/custom_stderr.txt
+2026-03-01T19:55:26Z,cloud,20,reference,graph500_reference_bfs,0.243288,0.256031,0.260831,result/raw/cloud/scale_20/reference_stdout.txt,result/raw/cloud/scale_20/reference_stderr.txt
+2026-03-01T20:07:03Z,cloud,21,custom,graph500_custom_bfs,0.322938,0.337941,0.340897,result/raw/cloud/scale_21/custom_stdout.txt,result/raw/cloud/scale_21/custom_stderr.txt
+2026-03-01T20:02:06Z,cloud,21,reference,graph500_reference_bfs,0.571582,0.601661,0.606767,result/raw/cloud/scale_21/reference_stdout.txt,result/raw/cloud/scale_21/reference_stderr.txt
+2026-03-01T20:33:23Z,cloud,22,custom,graph500_custom_bfs,0.784237,0.805457,0.811656,result/raw/cloud/scale_22/custom_stdout.txt,result/raw/cloud/scale_22/custom_stderr.txt
+2026-03-01T20:20:47Z,cloud,22,reference,graph500_reference_bfs,1.41603,1.46202,1.4686,result/raw/cloud/scale_22/reference_stdout.txt,result/raw/cloud/scale_22/reference_stderr.txt
+2026-03-01T21:34:48Z,cloud,23,custom,graph500_custom_bfs,1.72293,1.77025,1.78335,result/raw/cloud/scale_23/custom_stdout.txt,result/raw/cloud/scale_23/custom_stderr.txt
+2026-03-01T21:04:44Z,cloud,23,reference,graph500_reference_bfs,3.11628,3.18085,3.19801,result/raw/cloud/scale_23/reference_stdout.txt,result/raw/cloud/scale_23/reference_stderr.txt
 2026-02-26T03:12:10Z,local,18,custom,graph500_custom_bfs,0.01612,0.0163415,0.0164226,result/raw/local/scale_18/custom_stdout.txt,result/raw/local/scale_18/custom_stderr.txt
 2026-02-26T03:12:01Z,local,18,reference,graph500_reference_bfs,0.031638,0.03206,0.0320701,result/raw/local/scale_18/reference_stdout.txt,result/raw/local/scale_18/reference_stderr.txt
 2026-02-26T03:12:51Z,local,19,custom,graph500_custom_bfs,0.036478,0.0369055,0.036893,result/raw/local/scale_19/custom_stdout.txt,result/raw/local/scale_19/custom_stderr.txt

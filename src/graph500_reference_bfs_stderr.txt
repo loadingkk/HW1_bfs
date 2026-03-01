@@ -1,0 +1,27 @@
+graph_generation:               113.497076 s
+[ip-172-31-34-173:43568:0:43568] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f87e4a23842)
+==== backtrace (tid:  43568) ====
+ 0  /lib64/libucs.so.0(ucs_handle_error+0x2e4) [0x7f89d7fcfc44]
+ 1  /lib64/libucs.so.0(+0x295cd) [0x7f89d7fd05cd]
+ 2  /lib64/libucs.so.0(+0x297aa) [0x7f89d7fd07aa]
+ 3  /home/ec2-user/project/HW1_bfs/src/graph500_reference_bfs() [0x403e73]
+ 4  /home/ec2-user/project/HW1_bfs/src/graph500_reference_bfs() [0x404389]
+ 5  /home/ec2-user/project/HW1_bfs/src/graph500_reference_bfs() [0x403931]
+ 6  /home/ec2-user/project/HW1_bfs/src/graph500_reference_bfs() [0x4026c3]
+ 7  /lib64/libc.so.6(+0x2a610) [0x7f89de62a610]
+ 8  /lib64/libc.so.6(__libc_start_main+0x80) [0x7f89de62a6c0]
+ 9  /home/ec2-user/project/HW1_bfs/src/graph500_reference_bfs() [0x4037e5]
+=================================
+[ip-172-31-34-173:43568] *** Process received signal ***
+[ip-172-31-34-173:43568] Signal: Segmentation fault (11)
+[ip-172-31-34-173:43568] Signal code:  (-6)
+[ip-172-31-34-173:43568] Failing at address: 0x3e80000aa30
+[ip-172-31-34-173:43568] [ 0] /lib64/libc.so.6(+0x3fc30)[0x7f89de63fc30]
+[ip-172-31-34-173:43568] [ 1] /home/ec2-user/project/HW1_bfs/src/graph500_reference_bfs[0x403e73]
+[ip-172-31-34-173:43568] [ 2] /home/ec2-user/project/HW1_bfs/src/graph500_reference_bfs[0x404389]
+[ip-172-31-34-173:43568] [ 3] /home/ec2-user/project/HW1_bfs/src/graph500_reference_bfs[0x403931]
+[ip-172-31-34-173:43568] [ 4] /home/ec2-user/project/HW1_bfs/src/graph500_reference_bfs[0x4026c3]
+[ip-172-31-34-173:43568] [ 5] /lib64/libc.so.6(+0x2a610)[0x7f89de62a610]
+[ip-172-31-34-173:43568] [ 6] /lib64/libc.so.6(__libc_start_main+0x80)[0x7f89de62a6c0]
+[ip-172-31-34-173:43568] [ 7] /home/ec2-user/project/HW1_bfs/src/graph500_reference_bfs[0x4037e5]
+[ip-172-31-34-173:43568] *** End of error message ***
