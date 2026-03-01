@@ -108,6 +108,10 @@ python run_benchmark_cloud.py
 # Optional: run only one scale
 python benchmark_pipeline.py --location local --scales 18
 python benchmark_pipeline.py --location cloud --scales 18
+
+# Optional: run multi-core with MPI processes
+python run_benchmark_local.py --scales 24 --np 8
+python run_benchmark_cloud.py --scales 24 --np 8
 ```
 
 ## Analysis

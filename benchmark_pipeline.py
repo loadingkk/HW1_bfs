@@ -123,14 +123,27 @@ def run_binary(binary_path: Path, scale: int) -> subprocess.CompletedProcess[str
     )
 
 
-def run_once(location: str, scale: int, impl: str, binary_name: str) -> RunResult:
+def run_binary_mpi(binary_path: Path, scale: int, np: int) -> subprocess.CompletedProcess[str]:
+    if np <= 1:
+        return run_binary(binary_path=binary_path, scale=scale)
+
+    return subprocess.run(
+        ["mpirun", "-np", str(np), "--bind-to", "core", "--map-by", "core", str(binary_path), str(scale)],
+        cwd=SRC_DIR,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+
+def run_once(location: str, scale: int, impl: str, binary_name: str, np: int) -> RunResult:
     binary_path = SRC_DIR / binary_name
     if not binary_path.exists():
         raise FileNotFoundError(
             f"Missing binary: {binary_path}. Please ensure it is compiled before running this script."
         )
 
-    completed = run_binary(binary_path, scale)
+    completed = run_binary_mpi(binary_path=binary_path, scale=scale, np=np)
     if completed.returncode != 0:
         raise RuntimeError(
             f"Run failed: {binary_name} {scale}\n"
@@ -169,16 +182,16 @@ def run_once(location: str, scale: int, impl: str, binary_name: str) -> RunResul
     )
 
 
-def run_benchmarks(location: str, scales: Iterable[int]) -> None:
+def run_benchmarks(location: str, scales: Iterable[int], np: int = 1) -> None:
     ensure_paths()
     for scale in scales:
-        print(f"[run] location={location} scale={scale} impl=reference")
-        ref = run_once(location=location, scale=scale, impl="reference", binary_name="graph500_reference_bfs")
+        print(f"[run] location={location} scale={scale} impl=reference np={np}")
+        ref = run_once(location=location, scale=scale, impl="reference", binary_name="graph500_reference_bfs", np=np)
         upsert_row(ref.as_row())
         print(f"[saved] {CSV_PATH} <- {location} scale={scale} reference")
 
-        print(f"[run] location={location} scale={scale} impl=custom")
-        custom = run_once(location=location, scale=scale, impl="custom", binary_name="graph500_custom_bfs")
+        print(f"[run] location={location} scale={scale} impl=custom np={np}")
+        custom = run_once(location=location, scale=scale, impl="custom", binary_name="graph500_custom_bfs", np=np)
         upsert_row(custom.as_row())
         print(f"[saved] {CSV_PATH} <- {location} scale={scale} custom")
 
@@ -198,12 +211,20 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_SCALES,
         help="Scale list to run, e.g. --scales 18 19 20",
     )
+    parser.add_argument(
+        "--np",
+        type=int,
+        default=1,
+        help="MPI process count. Use >1 to run via mpirun, e.g. --np 8",
+    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
-    run_benchmarks(location=args.location, scales=args.scales)
+    if args.np < 1:
+        raise ValueError("--np must be >= 1")
+    run_benchmarks(location=args.location, scales=args.scales, np=args.np)
 
 
 if __name__ == "__main__":
