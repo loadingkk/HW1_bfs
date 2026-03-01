@@ -75,6 +75,27 @@ def parse_metrics(text: str) -> Dict[str, float]:
     return metrics
 
 
+def normalize_metric_key(key: str) -> str:
+    return " ".join(key.strip().lower().split())
+
+
+def resolve_required_metrics(metrics: Dict[str, float]) -> Dict[str, float]:
+    normalized = {normalize_metric_key(key): value for key, value in metrics.items()}
+
+    def pick(*candidates: str) -> float:
+        for candidate in candidates:
+            normalized_candidate = normalize_metric_key(candidate)
+            if normalized_candidate in normalized:
+                return normalized[normalized_candidate]
+        raise KeyError(candidates[0])
+
+    return {
+        "bfs_min_time": pick("bfs min_time", "bfs  min_time", "min_time"),
+        "bfs_median_time": pick("bfs median_time", "bfs  median_time", "median_time"),
+        "bfs_mean_time": pick("bfs mean_time", "bfs  mean_time", "mean_time"),
+    }
+
+
 def ensure_paths() -> None:
     RESULT_DIR.mkdir(parents=True, exist_ok=True)
     RAW_DIR.mkdir(parents=True, exist_ok=True)
@@ -161,11 +182,16 @@ def run_once(location: str, scale: int, impl: str, binary_name: str, np: int) ->
     stderr_path.write_text(completed.stderr, encoding="utf-8")
 
     metrics = parse_metrics(completed.stdout)
-    required_keys = ["bfs  min_time", "bfs  median_time", "bfs  mean_time"]
-    missing = [key for key in required_keys if key not in metrics]
-    if missing:
+    if completed.stderr:
+        metrics.update(parse_metrics(completed.stderr))
+
+    try:
+        required_metrics = resolve_required_metrics(metrics)
+    except KeyError:
+        available = sorted(metrics.keys())
         raise ValueError(
-            f"Missing required metrics in stdout for {impl} scale {scale}: {', '.join(missing)}"
+            f"Missing required metrics in output for {impl} scale {scale}. "
+            f"Available parsed keys: {available[:12]}{'...' if len(available) > 12 else ''}"
         )
 
     return RunResult(
@@ -174,9 +200,9 @@ def run_once(location: str, scale: int, impl: str, binary_name: str, np: int) ->
         scale=scale,
         impl=impl,
         binary=binary_name,
-        bfs_min_time=metrics["bfs  min_time"],
-        bfs_median_time=metrics["bfs  median_time"],
-        bfs_mean_time=metrics["bfs  mean_time"],
+        bfs_min_time=required_metrics["bfs_min_time"],
+        bfs_median_time=required_metrics["bfs_median_time"],
+        bfs_mean_time=required_metrics["bfs_mean_time"],
         stdout_file=str(stdout_path.relative_to(ROOT_DIR)),
         stderr_file=str(stderr_path.relative_to(ROOT_DIR)),
     )
