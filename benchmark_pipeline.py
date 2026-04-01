@@ -2,6 +2,7 @@ import argparse
 import csv
 import re
 import subprocess
+import sys
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -148,8 +149,12 @@ def run_binary_mpi(binary_path: Path, scale: int, np: int) -> subprocess.Complet
     if np <= 1:
         return run_binary(binary_path=binary_path, scale=scale)
 
+    mpi_command = ["mpirun", "-np", str(np)]
+    if sys.platform != "darwin":
+        mpi_command.extend(["--bind-to", "core", "--map-by", "core"])
+
     return subprocess.run(
-        ["mpirun", "-np", str(np), "--bind-to", "core", "--map-by", "core", str(binary_path), str(scale)],
+        [*mpi_command, str(binary_path), str(scale)],
         cwd=SRC_DIR,
         capture_output=True,
         text=True,
